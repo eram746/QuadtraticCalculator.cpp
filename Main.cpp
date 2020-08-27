@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+  
+  double a, b, c; 
+
+  std::cout << "Enter a: \n";
+  std::cin >> a; 
+  std::cout << "\nEnter b: \n";
+  std::cin >> b;
+  std::cout << "\nEnter c: \n";
+  std::cin >> c;
+
+  double root1, root2;
+
+  root1 = (-b + (std::sqrt(b*b - 4 * a * c)))/ (2 * a);
+  root2 = (-b - (std::sqrt(b*b - 4 * a * c)))/ (2 * a);
+
+  std::cout << "Root 1 is " << root1 << "\nRoot 2 is " << root2 << "\n";
+}
